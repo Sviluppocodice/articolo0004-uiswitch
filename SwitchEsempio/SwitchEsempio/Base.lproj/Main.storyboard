@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwitchEsempio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parco macchine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36x-Oo-QDu">
+                                <rect key="frame" x="20" y="60" width="335" height="20"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ferrari" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HzE-QD-EAF">
+                                <rect key="frame" x="40" y="144" width="226" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Panda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIW-Tk-hK8">
+                                <rect key="frame" x="40" y="233" width="226" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lamborghini" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fd-kh-vvG">
+                                <rect key="frame" x="40" y="322" width="226" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zZb-jA-P8Y">
+                                <rect key="frame" x="286" y="139" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ub6-8Q-GwL">
+                                <rect key="frame" x="286" y="228" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kRg-B1-Sop">
+                                <rect key="frame" x="286" y="317" width="51" height="31"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhS-uE-aX7">
+                                <rect key="frame" x="40" y="413" width="295" height="30"/>
+                                <state key="normal" title="Compra"/>
+                                <connections>
+                                    <action selector="compraButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ERI-sE-UoU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sIW-Tk-hK8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="27T-cd-o40"/>
+                            <constraint firstItem="zZb-jA-P8Y" firstAttribute="leading" secondItem="HzE-QD-EAF" secondAttribute="trailing" constant="20" id="6e4-b9-Hc9"/>
+                            <constraint firstItem="8fd-kh-vvG" firstAttribute="top" secondItem="sIW-Tk-hK8" secondAttribute="bottom" constant="68" id="81F-AQ-lCS"/>
+                            <constraint firstItem="36x-Oo-QDu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DwE-JO-FU6"/>
+                            <constraint firstItem="ZhS-uE-aX7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="J7d-hh-g1G"/>
+                            <constraint firstItem="sIW-Tk-hK8" firstAttribute="top" secondItem="HzE-QD-EAF" secondAttribute="bottom" constant="68" id="Jbg-q9-T7r"/>
+                            <constraint firstItem="36x-Oo-QDu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="L3k-Du-V9k"/>
+                            <constraint firstItem="ub6-8Q-GwL" firstAttribute="centerY" secondItem="sIW-Tk-hK8" secondAttribute="centerY" id="N3z-YG-eAv"/>
+                            <constraint firstItem="zZb-jA-P8Y" firstAttribute="centerY" secondItem="HzE-QD-EAF" secondAttribute="centerY" id="N8x-y5-7Vn"/>
+                            <constraint firstItem="kRg-B1-Sop" firstAttribute="centerY" secondItem="8fd-kh-vvG" secondAttribute="centerY" id="NH2-Ac-zBX"/>
+                            <constraint firstItem="36x-Oo-QDu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="NVW-fl-Q0W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kRg-B1-Sop" secondAttribute="trailing" constant="40" id="UA9-rt-imG"/>
+                            <constraint firstItem="ub6-8Q-GwL" firstAttribute="leading" secondItem="sIW-Tk-hK8" secondAttribute="trailing" constant="20" id="Z0J-dP-0Mf"/>
+                            <constraint firstItem="HzE-QD-EAF" firstAttribute="top" secondItem="36x-Oo-QDu" secondAttribute="bottom" constant="64" id="gh6-bC-up3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZhS-uE-aX7" secondAttribute="trailing" constant="40" id="jjm-vU-aIz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zZb-jA-P8Y" secondAttribute="trailing" constant="40" id="k6H-y3-Ooe"/>
+                            <constraint firstItem="8fd-kh-vvG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="kDS-fl-iuw"/>
+                            <constraint firstItem="kRg-B1-Sop" firstAttribute="leading" secondItem="8fd-kh-vvG" secondAttribute="trailing" constant="20" id="mWA-pv-dF2"/>
+                            <constraint firstItem="ZhS-uE-aX7" firstAttribute="top" secondItem="8fd-kh-vvG" secondAttribute="bottom" constant="70" id="rWk-oA-6mV"/>
+                            <constraint firstItem="HzE-QD-EAF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="sIE-Px-UO6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ub6-8Q-GwL" secondAttribute="trailing" constant="40" id="uWj-8i-Ep2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ferrariSwitch" destination="zZb-jA-P8Y" id="r2g-n0-kg9"/>
+                        <outlet property="lamborghiniSwitch" destination="kRg-B1-Sop" id="cso-i2-e30"/>
+                        <outlet property="pandaSwitch" destination="ub6-8Q-GwL" id="7UM-Wr-mNq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="97.601199400299862"/>
+        </scene>
+    </scenes>
+</document>
